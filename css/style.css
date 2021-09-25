@@ -3,12 +3,12 @@
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
   /* global style*/
   :root{
-    --main-color:#202b7e;
-    --telegram: #30A8DC;
-    --starname: #071A40;
+    --main-color: #2DD2FA;
+    --telegram: #26b4d6;
+    --starname: #161931;
     --white-900:#ffffff;
     --white-800:rgba(255,255,255,0.8);
-    --dark-900: #000200;
+    --dark-900: #000000;
     --dark-800: #24292d;
     --dark-700: #2f363e;
     --lighg-grey: #dcdcdc;
@@ -106,7 +106,7 @@
     text-align: center;
     text-transform: capitalize;
     font-size: 35px;
-    color: var(--dark-900);
+    color: var(--main-color);
     font-weight: 600;
   }
   .section-title h2 span{
@@ -122,6 +122,22 @@
     background-color: var(--twitter);
     transform: skewY(-3deg);
   }
+
+  .section-title1{
+    width: 100%;
+    padding: 0 15px;
+    margin-bottom: 60px;
+  }
+  .section-title1 h2{
+    text-transform: capitalize;
+    font-size: 40px;
+    color: var(--main-color);
+    font-weight: 700;
+  }
+  .section-title1 p{
+    font-size: 16px;
+    color: var(--white-900);
+  }
   .section-title p{
     text-align: center;
     font-size: 24px;
@@ -130,6 +146,21 @@
   p{
     font-size: 16px;
     color: var(--white-900);
+  }
+  .bullets p{
+    margin: 0 0 15px;
+    position: relative;
+    padding-left: 30px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .bullets i{
+    color: var(--main-color);
+  }
+  .bullets p i{
+    position: absolute;
+    left: 0;
+    top: 5px;
   }
   
   /* Header */
@@ -143,8 +174,18 @@
     z-index: 99;
     /*border-bottom: 1px solid var(--white-800);*/
   }
-  .scrolling-active{
+  .header-2{
     background-color: var(--dark-900);
+    padding: 10px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    /*border-bottom: 1px solid var(--white-800);*/
+  }
+  .scrolling-active{
+    background-color: var(--dark-800);
     box-shadow: 0 3px 1rem rgba(0,0,0,0.1);
     transition: all 0.5s ease;
   }
@@ -221,7 +262,7 @@
   .header .nav ul li a:hover{
     color: var(--main-color);
   }
-  
+    
 /*==================================================================
     /* home section */
   .home-section{
@@ -253,28 +294,49 @@
 
   }
   .home-img-inner{
-    max-width: 1000px;
-    margin: auto;
-  }
-  .home-partners img{
     max-width: 800px;
-    padding-bottom: 10%;
-    margin-left: 150px;
+    margin: auto;
   }
 
 /*==================================================================
-  /*--- vision section --*/
-  .vision-section{
-    background-color: var(--lighg-grey);
+  /*--- What is section --*/
+  .about-section{
+    background-color: var(--dark-900);
     padding-bottom: 50px;
   }
-  .vision-text p{
-    font-size: 24px;
-    font-weight: 300;
-    color: var(--dark-700);
-    margin: 15px 0 40px;
-  }
+  
 
+/*==================================================================
+/*--- sputnik bot section --*/
+.bot-section{
+  background-color: var(--dark-900);
+}
+.bot-text,
+.bot-img{
+  width: 50%;
+  padding: 0 15px;
+}
+.bot-img{
+  max-width: 600px;
+}
+.bot-text h1{
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--white-900);
+  text-transform: capitalize;
+  line-height: 1.2;
+}
+.bot-text h3{
+  font-size: 24px;
+  font-weight: 300;
+  color: var(--white-900);
+  margin: 15px 0 40px;
+
+}
+.bot-img-inner{
+  max-width: 1000px;
+  margin: auto;
+}
 
 /*==================================================================
   /*--- validators section --*/
@@ -383,6 +445,7 @@
 /*==================================================================
   /* Timeline Section*/
   .timeline-section{
+    background-color: var(--dark-900);
     padding-bottom: 50px;
   }
   .timeline-items{
@@ -424,18 +487,18 @@
     border-radius: 50%;
   }
   .timeline-content{
-    background-color: var(--main-color);
+    background-color: var(--dark-700);
     padding: 30px;
     border-radius: 5px;
   }
   .timeline-content h3{
     font-size: 20px;
-    color: var(--white-900);
+    color: var(--main-color);
     margin: 0 0 10px;
     font-weight: 600;
   }
   .timeline-content p{
-
+    color: var(--white-900);
   }
   
 /*==================================================================
@@ -487,12 +550,22 @@
     padding: 10px 15px;
     background: var(--main-color);
   }
+  /*==================================================================
+  /* Toknomics Page*/
+  .toknomics-section{
+    background-color: var(--dark-900);
+    padding-bottom: 50px;
+  }
+
+.card-text{
+  color: var(--dark-800);
+}
 /*==================================================================
   /* Footer Section*/
   .footer{
-    background-color: var(--lighg-grey);
+    background-color: var(--dark-900);
     padding: 60px 0;
-    color: var(--dark-700);
+    color: var(--white-900);
   }
   .footer-logo{
     max-width: 200px;
@@ -510,7 +583,7 @@
   }
   .footer-item p{
     font-size: 16px;
-    color: var(--dark-700);
+    color: var(--white-900);
   }
   .footer-about .social-links{
     margin-top: 20px;
@@ -541,6 +614,7 @@
     margin: 0 0 15px;
     position: relative;
     padding-left: 30px;
+    color: var(--white-900);
   }
   .footer-contact i{
     color: var(--main-color);
@@ -557,6 +631,10 @@
   .footer-newsletter .btn{
     height: 45px;
     width: 100%;
+  }
+  .copy{
+    font-size: 18px;
+    text-align: center;
   }
 
 
@@ -598,16 +676,16 @@
     .home-img{
       margin-top: 60px;
     }
-    .school-text h1{
+    .bot-text h1{
       font-size: 40px;
     }
-    .school-text h3{
+    .bot-text h3{
       font-size: 20px;
     }
-    .school-text, .school-img{
+    .bot-text, .bot-img{
       width: 100%;
     }
-    .school-img{
+    .bot-img{
       margin-top: 60px;
     }
     .foundation-text h1{
@@ -639,7 +717,7 @@
     .contact-img, .contact-form,
     .why-us-img, .why-us-text,
     .home-text, .home-img,
-    .school-text, .school-img{
+    .bot-text, .bot-img{
       width: 100%;
     }
     .contact-form,
@@ -652,17 +730,17 @@
     .home-text h3{
       font-size: 18px;
     }
+    .bot-text h1{
+      font-size: 35px;
+    }
+    .bot-text h3{
+      font-size: 18px;
+    }
     .home-partners img{
     max-width: 400px;
     padding-bottom: 10%;
     margin-left: 60px;
   }
-    .school-text h1{
-      font-size: 35px;
-    }
-    .school-text h3{
-      font-size: 18px;
-    }
 
     .foundation-text h1{
       font-size: 35px;
@@ -705,16 +783,16 @@
     .home-text h3{
       font-size: 18px;
     }
+    .bot-text h1{
+      font-size: 28px;
+    }
+    .bot-text h3{
+      font-size: 18px;
+    }
     .home-partners img{
       max-width: 250px;
       padding-bottom: 10%;
       margin-left: 30px;
-    }
-    .school-text h1{
-      font-size: 28px;
-    }
-    .school-text h3{
-      font-size: 18px;
     }
     .foundation-text h1{
       font-size: 28px;
