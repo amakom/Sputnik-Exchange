@@ -107,6 +107,7 @@
   .sec-padding{
     padding: 80px 0;
   }
+  /*
   .section-title{
     width: 100%;
     padding: 0 15px;
@@ -131,27 +132,30 @@
     height: 2px;
     background-color: var(--twitter);
     transform: skewY(-3deg);
-  }
+  }*/
 
-  .section-title1{
+  .section-title{
     width: 100%;
     padding: 0 15px;
     margin-bottom: 60px;
   }
-  .section-title1 h2{
+
+  .section-title h1{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 900;
+    color: var(--main-color);
+  }
+  .section-title h2{
     text-transform: capitalize;
+    text-align: center;
     font-size: 40px;
     color: var(--main-color);
     font-weight: 700;
   }
-  .section-title1 p{
+  .section-title p{
     font-size: 16px;
     color: var(--white-900);
-  }
-  .section-title p{
-    text-align: center;
-    font-size: 24px;
-    color: var(--main-color);
   }
   p{
     font-size: 16px;
@@ -354,14 +358,6 @@
     background-color: var(--dark-900);
     padding-bottom: 50px;
   }
-
-  .section-title-1 h2{
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 35px;
-    color: var(--white-900);
-    font-weight: 600;
-  }
   .Team-section p{
     font-size: 16px;
     font-weight: 300;
@@ -489,12 +485,6 @@
     padding-top: 50px;
   }
 
-  .section-title1 h1{
-    font-size: 50px;
-    font-weight: 900;
-    color: var(--main-color);
-  }
-
 .card-text{
   color: var(--dark-700);
 }
@@ -541,6 +531,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 15px;
   }
   .Login-section .box{
     min-width: 400px;
@@ -646,7 +637,7 @@
     text-align: center;
     color: var(--white-900);
     font-size: 14px;
-    margin: 20px 0px 15px;
+    margin: 20px 0px 20px;
   }
 
   .Login-section .box .social-links .link-box{
@@ -914,6 +905,13 @@
     .btn-4{
       margin-left: 30%;
     }
+    .Login-section form{
+      min-width: 100%;
+    }
+    .Login-section .box{
+      min-width: 100%;
+      padding: 30px;
+    }
   }
 
   @media(max-width:270px){
@@ -938,6 +936,13 @@
     .contact-form button{
       font-size: 14px;
       padding: 5px 10px;
+    }
+    .Login-section form{
+      min-width: 100%;
+    }
+    .Login-section .box{
+      min-width: 100%;
+      padding: 20px;
     }
   }
 
