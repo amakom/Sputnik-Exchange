@@ -85,13 +85,23 @@
     color: var(--white-900);
   }
   .btn-2{
-    background-color: var(--main-color);
+    background-color: var(--starname);
     color: var(--white-900);
     margin: 2px;
   }
   .btn-2:hover{
     background-color: transparent;
-    border-color: var(--main-color);
+    border-color: var(--starname);
+    color: var(--main-color);
+  }
+  .btn-3{
+    background-color: var(--telegram);
+    color: var(--white-900);
+    margin: 2px;
+  }
+  .btn-3:hover{
+    background-color: transparent;
+    border-color: var(--telegram);
     color: var(--main-color);
   }
   .sec-padding{
@@ -339,8 +349,8 @@
 }
 
 /*==================================================================
-  /*--- validators section --*/
-  .validators-section{
+  /*--- Team section --*/
+  .Team-section{
     background-color: var(--dark-900);
     padding-bottom: 50px;
   }
@@ -352,96 +362,15 @@
     color: var(--white-900);
     font-weight: 600;
   }
-  .validators-text p{
-    font-size: 24px;
+  .Team-section p{
+    font-size: 16px;
     font-weight: 300;
-    color: var(--white-900);
+    color: var(--main-color);
     margin: 15px 0 40px;
   }
   .val h4{
     color: var(--white-900);
   }
-
-/*==================================================================
-    /* school section */
-    .school-section{
-      padding-bottom: 50px;
-      background-color: var(--lighg-grey);
-    }
-    .school-section .h-100{
-      padding: 120px 0;
-    }
-    .school-text,
-    .school-img{
-      width: 50%;
-      padding: 0 15px;
-    }
-    .school-text h1{
-      font-size: 48px;
-      font-weight: 700;
-      color: var(--dark-800);
-      line-height: 1.2;
-    }
-    .school-text h3{
-      font-size: 20px;
-      font-weight: 300;
-      color: var(--dark-800);
-      margin: 15px 0 40px;
-  
-    }
-    .school-img-inner{
-      max-width: 1000px;
-      margin: auto;
-    }
-  
-/*==================================================================
-  /* Why Us Section*/
-  .why-us-section{
-    background-color: var(--dark-900);
-    padding-bottom: 50px;
-  }
-  .section-title-1 h2{
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 35px;
-    color: var(--white-900);
-    font-weight: 600;
-  }
-  .section-title-1 h2 span{
-    position: relative;
-  }
-  .section-title-1 h2 span::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background-color: var(--twitter);
-    transform: skewY(-3deg);
-  }
-  .why-us-text,
-  .why-us-img{
-    width: 50%;
-    padding: 0 15px;
-  }
-  .why-us-text p{
-    font-size: 16px;
-    font-weight: 300;
-    color: var(--white-900);
-    margin: 15px 0 40px;
-  }
-  .why-us-img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 15px;
-  }
-  .why-us-img img{
-    max-width: 400px;
-    width: 100%;
-  }
-
 /*==================================================================
   /* Timeline Section*/
   .timeline-section{
@@ -556,10 +485,182 @@
     background-color: var(--dark-900);
     padding-bottom: 50px;
   }
+  .section-title1{
+    padding-top: 50px;
+  }
+
+  .section-title1 h1{
+    font-size: 50px;
+    font-weight: 900;
+    color: var(--main-color);
+  }
 
 .card-text{
-  color: var(--dark-800);
+  color: var(--dark-700);
 }
+
+
+/*==================================================================
+  /* Litepaper Page*/
+
+/*==================================================================
+  /* Contact Us Page*/
+  .btn-lg {
+    border-width: medium;
+    border-radius: 0;
+    padding: 0.6rem 1.3rem;
+    font-size: 1.2rem;
+    color: var(--white-900);
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .pft {
+    border-bottom: 1px solid white;
+    padding-top: 20px;
+  }
+  
+  .pft a {
+    color: var(--main-color);
+    text-transform: uppercase;
+  }
+  
+  /*---Pre Footer Address --*/
+  
+  .pft i {
+    margin-right: 10px;
+    color: var(--main-color);
+    font-size: 25px;
+  }
+
+  /*==================================================================
+  /* Log In Page*/
+  .Login-section{
+    background-color: var(--dark-900);
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Login-section .box{
+    min-width: 400px;
+    min-height: 450px;
+    background-color: var(--dark-700);
+    box-shadow: 0px 0px 10px var(--dark-800);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Login-section .box .form-icon{
+    width: 50px;
+    display: block;
+    margin: auto;
+    font-size: 50px;
+    color: var(--main-color);
+  }
+
+  .Login-section .box h4{
+    color: var(--main-color);
+    font-size: 22px;
+    text-align: left;
+    margin: 15px 0px 20px;
+    border-bottom: 1px solid var(--main-color);
+    padding-bottom: 3px;
+    display: inline-block;
+  }
+
+  .Login-section .box .form-fields{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .Login-section .box .form-fields .input-box{
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .Login-section .box .form-fields .input-box .form-control{
+    height: 40px;
+    width: 100%;
+    padding: 0px 0px 0px 45px;
+    color: var(--dark-800);
+    border: 1px solid var(--dark-700);
+  }
+
+  .Login-section .box .form-fields .input-box .form-control::placeholder{
+    color: var(--dark-700);
+  }
+
+  .Login-section .box .form-fields .input-box span{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+
+  .Login-section .box .form-fields .input-box span fas{
+    width: 22px;
+  }
+
+  .Login-section .box .form-fields .button-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .Login-section .box .form-fields .button-box button{
+    color: var(--white-900);
+    font-size: 16px;
+    padding: 8px 35px;
+    background-color: var(--main-color);
+    transition:box-shadow .5s ease;
+    border: none;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+
+  .Login-section .box .form-fields .button-box button:hover{
+    box-shadow: 0px 0px 10px var(--telegram);
+  }
+
+  .Login-section .box .form-fields .button-box a{
+    font-size: 16px;
+    color: var(--white-900);
+  }
+
+  .Login-section .box .social-links{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .Login-section .box .social-links p{
+    text-align: center;
+    color: var(--white-900);
+    font-size: 14px;
+    margin: 20px 0px 15px;
+  }
+
+  .Login-section .box .social-links .link-box{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .Login-section .box .social-links .link-box a{
+    color: var(--main-color);
+    padding: 8px;
+    font-size: 20px;
+    text-align: center;
+  }
 /*==================================================================
   /* Footer Section*/
   .footer{
