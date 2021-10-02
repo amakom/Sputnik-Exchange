@@ -14,3 +14,10 @@ window.addEventListener('scroll', function () {
   header.classList.toggle('scrolling-active', windowPosition);
 })
 
+
+window.addEventListener("load", () =>{
+  document.querySelector(".preloader").classList.add("fade-out");
+  setTimeout(() =>{
+    document.querySelector(".preloader").style.display="none";
+  },600)
+})
