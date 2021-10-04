@@ -533,8 +533,7 @@
   .section-title1{
     padding-top: 50px;
   }
-
-.card-text{
+  .card-text{
   color: var(--dark-700);
 }
 
@@ -858,7 +857,8 @@
     .contact-img, .contact-form,
     .why-us-img, .why-us-text,
     .home-text, .home-img,
-    .bot-text, .bot-img{
+    .bot-text, .bot-img .section-title h1,
+    .section-title p{
       width: 100%;
     }
     .contact-form,
@@ -918,6 +918,13 @@
   }
   
   @media(max-width:575px){
+    .contact-img, .contact-form,
+    .why-us-img, .why-us-text,
+    .home-text, .home-img,
+    .bot-text, .bot-img .section-title h1,
+    .section-title p{
+      width: 100%;
+    }
     .home-text h1{
       font-size: 28px;
     }
@@ -961,9 +968,22 @@
       min-width: 100%;
       padding: 30px;
     }
+    .Login-section .box{
+      min-width: 250px;
+    }
+    .contact-form h2{
+      color: var(--white-900);
+      font-size: 50px;
+    }
   }
 
-  @media(max-width:270px){
+  @media(max-width:356px){
+    .contact-img, .contact-form,
+    .why-us-img, .why-us-text,
+    .home-text, .home-img,
+    .bot-text, .bot-img .section-title h1{
+      width: 100%;
+    }
     .home-partners img{
       max-width: 200px;
       padding-bottom: 10%;
@@ -981,6 +1001,72 @@
       padding: 5px 10px;
       margin-right: 10px;
     }
+    .section-title h1{
+      font-size: 30px;
+    }
+    .bullets p{
+      font-size: 14px;
+    }
+    .contact-form h2{
+      color: var(--white-900);
+      font-size: 35px;
+    }
+    
+    .contact-form button{
+      font-size: 14px;
+      padding: 5px 10px;
+    }
+    .Login-section .box{
+      min-width: 150px;
+    }
+    .Login-section form{
+      min-width: 100%;
+    }
+    .Login-section .box{
+      min-width: 100%;
+      padding: 20px;
+    }
+    .btn{
+      display: inline-block;
+      padding: 10px 30px;
+      font-size: 16px;
+    }
+  }
+
+  @media(max-width:290px){
+    .contact-img, .contact-form,
+    .why-us-img, .why-us-text,
+    .home-text, .home-img,
+    .bot-text, .bot-img .section-title h1{
+      width: 100%;
+    }
+    .home-partners img{
+      max-width: 200px;
+      padding-bottom: 10%;
+      margin-left: 10px;
+    }
+    .contact-form h2{
+      font-size: 50px;
+    }
+    .contact-form p{
+      font-size: 20px;
+    }
+    .contact-form input{
+      font-size: 14px;
+      width: 54%;
+      padding: 5px 10px;
+      margin-right: 10px;
+    }
+    .section-title h1{
+      font-size: 30px;
+    }
+    .bullets p{
+      font-size: 12px;
+    }
+    .contact-form h2{
+      color: var(--white-900);
+      font-size: 35px;
+    }
     
     .contact-form button{
       font-size: 14px;
@@ -992,6 +1078,14 @@
     .Login-section .box{
       min-width: 100%;
       padding: 20px;
+    }
+    .btn{
+      display: inline-block;
+      padding: 10px 30px;
+      font-size: 16px;
+    }
+    .Login-section .box .social-links .link-box a{
+      font-size: 14px;
     }
   }
 
