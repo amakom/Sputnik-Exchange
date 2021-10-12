@@ -632,33 +632,13 @@ p {
 /*==================================================================
   /* Exchange Page*/
 .exchange-section {
-  background-color: var(--dark-900);
+  background-image: url(../images/Star.gif);
   padding-bottom: 50px;
-}
-.navbar {
-  background-color: var(--dark-900) !important;
-}
-.navbar a {
-  font-size: 16px;
-  font-weight: 500;
-  color: var(--white-900) !important;
-  display: block;
-  padding: 10px 0;
-  text-transform: capitalize;
-  transition: all 0.5s ease;
-}
-.collapse ul li a {
-  font-size: 16px;
-  font-weight: 500;
-  color: var(--white-900) !important;
-  display: block;
-  padding: 10px 0;
-  text-transform: capitalize;
-  transition: all 0.5s ease;
 }
 #login_button {
   color: var(--white-900);
   background-color: var(--main-color);
+  margin-left: 40px;
 }
 #swap_button {
   background-color: var(--main-color);
