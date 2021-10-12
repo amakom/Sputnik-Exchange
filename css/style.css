@@ -327,6 +327,98 @@ p {
 }
 
 /*==================================================================
+  
+  /* Header-3 */
+.header-3 {
+  background-color: transparent;
+  padding: 10px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  /*border-bottom: 1px solid var(--white-800);*/
+}
+.scrolling-active {
+  background-color: var(--dark-800);
+  box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+.logo {
+  max-width: 150px;
+  padding: 0 15px;
+}
+.header-3 #nav-check {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+}
+.header-3 #nav-check:focus ~ .nav-toggler {
+  box-shadow: 0 0 10px var(--white-900);
+}
+.header-3 .nav-toggler {
+  height: 34px;
+  width: 44px;
+  border: 1px solid var(--white-900);
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.header-3 .nav-toggler span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: var(--white-900);
+  position: relative;
+}
+.header-3 #nav-check:checked ~ .nav-toggler span {
+  background-color: transparent;
+}
+.header-3 .nav-toggler span::before,
+.header-3 .nav-toggler span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--white-900);
+}
+.header-3 .nav-toggler span::before {
+  transform: translateY(-6px);
+}
+.header-3 #nav-check:checked ~ .nav-toggler span::before {
+  transform: rotate(45deg);
+}
+.header-3 .nav-toggler span::after {
+  transform: translateY(6px);
+}
+.header-3 #nav-check:checked ~ .nav-toggler span::after {
+  transform: rotate(-45deg);
+}
+.header-3 .nav {
+  padding: 0 15px;
+}
+.header-3 .nav ul li {
+  display: inline-block;
+  margin-left: 40px;
+}
+.header-3 .nav ul li a {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--white-900);
+  display: block;
+  padding: 10px 0;
+  text-transform: capitalize;
+  transition: all 0.5s ease;
+}
+.header-3 .nav ul li a:hover {
+  color: var(--main-color);
+}
+
+/*==================================================================
     /* home section */
 .home-section {
   background-image: url(../images/Star.gif);
@@ -573,7 +665,7 @@ p {
   color: var(--white-900);
 }
 #window {
-  margin-top: 50px;
+  margin-top: 150px;
   background-color: var(--dark-700);
   color: #fff;
   padding: 15px;
