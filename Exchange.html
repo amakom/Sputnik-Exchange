@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>www.sputnik.network</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+<link rel="manifest" href="images/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<!-- bootstrap -->
+<link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
+<!--===============================================================================================-->
+<!-- Fontawesome -->
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<!--===============================================================================================-->
+<!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fixed.css">
+<!--===============================================================================================-->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body">
+
+<!--- Pre-loader Section Start -->
+	<div class="preloader">
+        <div class="box">
+            <div></div><div></div><div></div>
+        </div>
+    </div>
+<!--- Pre-loader Section End -->
+
+<!--- Header start -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html"><img src="images/LOGO.png" class="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+        <button id="login_button" class="btn btn-outline-primary my-2 my-sm-0" type="submit">Connect Wallet</button>
+    </div>
+</nav>
+<!--- Header end -->
+<!--- Exchange Section Start -->
+<section class="exchange-section" id="home">
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-6 offset-md-3" id="window">
+                <h4>*Starname</h4>
+                <div id="form">
+                    <div class="swapbox">
+                        <div class="swapbox_select token_select" id="from_token_select">
+                            <img class="token_image" id="from_token_img">
+                            <span id="from_token_text"></span>
+                        </div>
+                        <div class="swapbox_select">
+                            <input class="number form-control" placeholder="amount" id="from_amount">
+                        </div>
+                    </div>
+                    <div class="swapbox">
+                        <div class="swapbox_select token_select"  id="to_token_select">
+                            <img class="token_image" id="to_token_img">
+                            <span id="to_token_text"></span>
+                        </div>
+                        <div class="swapbox_select">
+                            <input class="number form-control" placeholder="amount" id="to_amount">
+                        </div>
+                    </div>
+                    <div>Estimated Gas: <span id="gas_estimate"></span></div>
+                    <button disabled class="btn btn-large btn-primary btn-block" id="swap_button">
+                        Swap
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="token_modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title">Select token</h5>
+            <button id="modal_close" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            <div id="token_list"></div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+<!--- Exchange Section End -->
+
+<!--- Footer Start -->
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-item footer-about">
+			  <a href="index.html"><img src="images/SPUTNIK Log.png" class="footer-logo"></a>
+				<p>The Sputnik Network is an ecosystem of services that connects Web2 with Web3. Our team create "from-Community-to-Community" tools for quick and easy use of crypto inside messengers and social networks.</p>
+				<div class="social-links">
+					<a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+					<a href="#" target="_blank"><i class="fab fa-telegram"></i></a>
+					<a href="#" target="_blank"><i class="fab fa-github"></i></a>
+					<a href="#" target="_blank"><i class="fab fa-discord"></i></a>
+					<a href="#" target="_blank"><i class="fab fa-medium"></i></a>
+				</div>
+			</div>
+			<div class="footer-item footer-quick-links">
+			  <h2>quick links</h2>
+			  <ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="toknomics.html">Toknomics</a></li>
+				<li><a href="team.html">Team</a></li>
+				<li><a href="contact-us.html">Contact Us</a></li>
+				<li><a href="Login.html">Login</a></li>
+				<li><a href="Sign Up.html">Sign Up</a></li>
+			  </ul>
+		  </div>
+		  <div class="footer-item footer-contact">
+			  <h2>contact us</h2>
+			  <p><i class="fas fa-envelope"></i> info@sputnik.network</p>
+		  </div>
+		  <div class="footer-item footer-newsletter">
+			  <h2>newsletter</h2>
+			  <form>
+				  <div class="input-group">
+					  <input type="text" placeholder="Your Email" class="form-control">
+				  </div>
+				  <button type="submit" class="btn btn-1">subscribe</button>
+			  </form>
+		  </div>
+		</div>
+		<div>
+		  <p class="text-light copy">Copyright © 2021 Sputnik Network</p>
+		</div>
+	</div>
+</footer>
+<!--- Footer End -->
+
+
+<!--- Script Source Files -->
+<script src="script.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
