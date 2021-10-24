@@ -630,7 +630,200 @@ p {
   /* Litepaper Page*/
 
 /*==================================================================
-  /* Exchange Page*/
+  /* Dashboard Page*/
+.sidebar {
+  width: 345px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-image: url(../images/Star.gif);
+  z-index: 100;
+  transition: width 300ms;
+}
+.sidebar-brand {
+  height: 90px;
+  padding: 1rem 0rem 1rem 2rem;
+}
+.sidebar-menu {
+  margin-top: 1rem;
+}
+.sidebar-menu li {
+  width: 100%;
+  margin-bottom: 1.7rem;
+  padding-left: 1rem;
+}
+.sidebar-menu a {
+  padding-left: 1rem;
+  display: block;
+  color: var(--main-color);
+  font-size: 1.1rem;
+}
+.sidebar-menu a.active {
+  background: var(--white-900);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: var(--main-color);
+  border-radius: 30px 0px 0px 30px;
+}
+.sidebar-menu a span:first-child {
+  font-size: 1.5rem;
+  padding-right: 1rem;
+}
+#nav-toggle:checked + .sidebar {
+  width: 70px;
+}
+#nav-toggle:checked + .sidebar .sidebar-brand,
+#nav-toggle:checked + .sidebar li {
+  padding-left: 1rem;
+  text-align: center;
+}
+#nav-toggle:checked + .sidebar li a {
+  padding-left: 0rem;
+}
+
+#nav-toggle:checked + .sidebar .sidebar-brand:last-child,
+#nav-toggle:checked + .sidebar li a span:last-child {
+  display: none;
+}
+#nav-toggle:checked ~ .main-content {
+  margin-left: 70px;
+}
+#nav-toggle:checked ~ .main-content .dashboard-header {
+  width: calc(100% - 70px);
+  left: 70px;
+}
+.main-content {
+  transition: margin-left 300ms;
+  margin-left: 345px;
+}
+
+.dashboard-header {
+  background: var(--white-900);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  left: 345px;
+  width: calc(100% - 345px);
+  top: 0;
+  z-index: 100;
+  transition: left 300ms;
+}
+#nav-toggle {
+  display: none;
+}
+.dashboard-header h3 {
+  color: var(--main-color);
+}
+.dashboard-header label span {
+  font-size: 1.7rem;
+  padding-right: 1rem;
+}
+.search-wrapper {
+  border: 1px solid var(--main-color);
+  border-radius: 30px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+}
+.search-wrapper span {
+  display: inline-block;
+  padding: 0rem 1rem;
+  font-size: 1.4rem;
+}
+.search-wrapper input {
+  height: 100%;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+}
+
+.user-weapper {
+  display: flex;
+  align-items: center;
+}
+.user-weapper img {
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+main {
+  margin-top: 85px;
+  padding: 2rem 1.5rem;
+  background: var(--lighg-grey);
+  min-height: calc(100vh - 90px);
+}
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  margin-top: 1rem;
+}
+
+.card-single {
+  display: flex;
+  justify-content: space-between;
+  background: var(--telegram);
+  padding: 2rem;
+  border-radius: 5px;
+}
+.card-single span:last-child {
+  color: var(--white-900);
+}
+.card-single span:first-child {
+  font-size: 2rem;
+}
+.transactions-grid {
+  margin-top: 3.5rem;
+  display: grid;
+}
+.card-transaction {
+  background: var(--white-900);
+  border-radius: 5px;
+}
+.card-header {
+  padding: 1rem;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--dark-700);
+}
+.card-header button {
+  background: var(--main-color);
+  border-radius: 5px;
+  color: var(--white-900);
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--main-color);
+}
+table {
+  border-collapse: collapse;
+}
+
+thead tr {
+  border-top: 1px solid var(--dark-700);
+  border-bottom: 1px solid var(--dark-700);
+}
+thead td {
+  font-weight: 700;
+}
+
+td {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/*=================================================================
+  /* Starname Page*/
 .exchange-section {
   background-image: url(../images/Star.gif);
   padding-bottom: 50px;
