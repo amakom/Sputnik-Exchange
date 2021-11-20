@@ -64,7 +64,7 @@ img {
 .btn {
   display: inline-block;
   padding: 10px 30px;
-  border-radius: 50px;
+  border-radius: 4px;
   text-transform: capitalize;
   font-weight: 500;
   border: 1px solid transparent;
@@ -502,8 +502,13 @@ p {
   color: var(--main-color);
   margin: 15px 0 40px;
 }
-.val h4 {
+.val h5 {
   color: var(--white-900);
+  font-size: 20px;
+}
+
+.val p {
+  font-size: 14px;
 }
 /*==================================================================
   /* Timeline Section*/
@@ -552,7 +557,7 @@ p {
 .timeline-content {
   background-color: var(--dark-700);
   padding: 30px;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 .timeline-content h3 {
   font-size: 20px;
@@ -885,37 +890,54 @@ td {
 }
 /*==================================================================
   /* Contact Us Page*/
-.btn-lg {
-  border-width: medium;
-  border-radius: 0;
-  padding: 0.6rem 1.3rem;
-  font-size: 1.2rem;
-  color: var(--white-900);
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
-.pft {
-  border-bottom: 1px solid white;
+.contact-icons {
+  border-bottom: 1px solid var(--main-color);
   padding-top: 20px;
 }
 
-.pft a {
+.contact-icons a {
   color: var(--main-color);
   text-transform: uppercase;
 }
 
-/*---Pre Footer Address --*/
-
-.pft i {
+.contact-icons i {
   margin-right: 10px;
   color: var(--main-color);
   font-size: 25px;
 }
 
+.form-group .btn-form {
+  font-size: 18px;
+  font-weight: 600;
+  height: 48px;
+  color: var(--white-900);
+  background-color: var(--main-color);
+}
+
+/*==================================================================
+  /* breadcrumb*/
+.breadcrumb-nav {
+  background-color: transparent;
+  padding-top: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  /*border-bottom: 1px solid var(--white-800);*/
+}
+.breadcrumb {
+  background-color: var(--dark-900);
+}
+
+.breadcrumb-item a {
+  color: var(--main-color);
+  font-weight: 500;
+}
+
 /*==================================================================
   /* Log In Page*/
-.Login-section {
+.login-section {
   background-color: var(--dark-900);
   padding-bottom: 50px;
   display: flex;
@@ -923,9 +945,10 @@ td {
   justify-content: center;
   padding: 15px;
 }
-.Login-section .box {
-  min-width: 400px;
-  min-height: 450px;
+.login-section .box {
+  margin-top: 50px;
+  min-width: 50px;
+  min-height: 50px;
   background-color: var(--dark-700);
   box-shadow: 0px 0px 10px var(--dark-800);
   padding: 40px;
@@ -933,115 +956,32 @@ td {
   flex-direction: column;
 }
 
-.Login-section .box .form-icon {
-  width: 50px;
-  display: block;
-  margin: auto;
-  font-size: 50px;
+.login-section .form-title {
+  font-size: 24px;
+  margin: 0 0 30px;
+  font-weight: 600;
   color: var(--main-color);
 }
 
-.Login-section .box h4 {
-  color: var(--main-color);
-  font-size: 22px;
-  text-align: left;
-  margin: 15px 0px 20px;
-  border-bottom: 1px solid var(--main-color);
-  padding-bottom: 3px;
-  display: inline-block;
-}
-
-.Login-section .box .form-fields {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.Login-section .box .form-fields .input-box {
-  position: relative;
-  margin-bottom: 20px;
-  width: 100%;
-}
-
-.Login-section .box .form-fields .input-box .form-control {
-  height: 40px;
-  width: 100%;
-  padding: 0px 0px 0px 45px;
-  color: var(--dark-800);
-  border: 1px solid var(--dark-700);
-}
-
-.Login-section .box .form-fields .input-box .form-control::placeholder {
-  color: var(--dark-700);
-}
-
-.Login-section .box .form-fields .input-box span {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  height: 100%;
-  width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
-}
-
-.Login-section .box .form-fields .input-box span fas {
-  width: 22px;
-}
-
-.Login-section .box .form-fields .button-box {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.Login-section .box .form-fields .button-box button {
+.login-section .btn-form {
+  height: 48px;
   color: var(--white-900);
-  font-size: 16px;
-  padding: 8px 35px;
   background-color: var(--main-color);
-  transition: box-shadow 0.5s ease;
-  border: none;
-  cursor: pointer;
-  margin-right: 15px;
 }
 
-.Login-section .box .form-fields .button-box button:hover {
-  box-shadow: 0px 0px 10px var(--telegram);
-}
-
-.Login-section .box .form-fields .button-box a {
-  font-size: 16px;
-  color: var(--white-900);
-}
-
-.Login-section .box .social-links {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.Login-section .box .social-links p {
-  text-align: center;
-  color: var(--white-900);
-  font-size: 14px;
-  margin: 20px 0px 20px;
-}
-
-.Login-section .box .social-links .link-box {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.Login-section .box .social-links .link-box a {
+.link-box a {
   color: var(--main-color);
-  padding: 8px;
-  font-size: 20px;
-  text-align: center;
+  margin-left: 10px;
+  font-size: 16px;
 }
+.text-action a {
+  color: var(--main-color);
+  font-weight: 500;
+}
+.d-flex a {
+  color: var(--main-color);
+}
+
 /*==================================================================
   /* Footer Section*/
 .footer {
@@ -1109,7 +1049,7 @@ td {
 .footer-newsletter .form-control {
   margin-bottom: 15px;
   text-align: center;
-  border-radius: 50px;
+  border-radius: 4px;
 }
 .footer-newsletter .btn {
   height: 45px;
